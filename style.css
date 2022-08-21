@@ -1,0 +1,42 @@
+.purpleBox {
+  background-color: #dccdf1;
+}
+
+h2 {
+  margin: 20px;
+  margin-left: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+#map {
+  width: 1000px;
+  height: 600px;
+  margin: 3px;
+  margin-left: 10px;
+}
+
+#searchBox {
+  margin: 3px;
+  width: 30%;
+  padding: 3px;
+  margin-bottom: 6px;
+  margin-left: 0px;
+  margin-right: auto;
+  transition: width 0.4s ease-in-out;
+}
+
+#searchBoxContainer {
+  margin-left: 10px;
+}
+
+#bar {
+  height: 25px;
+  width:10px;
+}
+
+#findRoute {
+  margin-left: 10px;
+}

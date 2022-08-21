@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purple Box</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+</head>
+<body class="purpleBox">
+    <!-- heading information -->
+    <h2>Find a Purple Box location near you!</h3>
+    <p>Glass is, in many places, not accepted in curbside recycling programs. This is due to the costs and contamination that glass recycling causes.<br><br>As a result, the two methods of glass disposal are either to carefully package it into the trash, or drop it off at purple glass-only recycling containers.<br><br>Recycling glass is preferable to trashing it, but many people do not know about the Purple Box Glass Recycling program, or where they are located.<br><br>Use this website to easily find where the nearest Purple Box location is based off of current driving conditions.</p>
+    <br>
+    <p>Use the text box below to enter in your address, or click on the "Locate Me" button. Then press the "Find a Purple Box" button to find the nearest location!</p>
+    <!-- search box -->
+    <div id='searchBoxContainer'>
+        <input type='text' id='searchBox' placeholder="Your location"/>
+        <button id="locateUser" onclick="getUserLocation()">Locate Me</button>
+    </div>
+        <button id="findRoute" onclick="nearestPurpleBox()">Find a Purple Box</button>
+        <p id="warning"></p>
+        <p id="result"></p>
+    <br>
+    <!-- route -->
+    <p id="route"></p>
+    <!-- map -->
+    <div id="map"></div>
+    <p id="specifications">*Purple dots are Purple Box locations, a green dot is your location, and a red dot is the nearest purple box location.</p>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=getMap&key=Am8ryQPYHCOfmbeh9Uk6tulI8N1xFN-Ab9DRLdmRbDtaJ8SFj1U00pU5LW9xzzac' async defer></script>
+</body>
+</html>
