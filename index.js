@@ -184,7 +184,7 @@ nearestPurpleBox = () => {
         var tryFetches = [];
         for (const name in nameToCoord) {
             var coord = nameToCoord[name];
-            var url = `http://www.mapquestapi.com/directions/v2/route?key=VKua6PnHz9fnb1zIAmrBBwQ6NiuB2XTt&from=${recentPin["geometry"]["y"]},${recentPin["geometry"]["x"]}&to=${coord["latitude"]},${coord["longitude"]}`;
+            var url = `https://www.mapquestapi.com/directions/v2/route?key=VKua6PnHz9fnb1zIAmrBBwQ6NiuB2XTt&from=${recentPin["geometry"]["y"]},${recentPin["geometry"]["x"]}&to=${coord["latitude"]},${coord["longitude"]}`;
             const fetchReq = fetch(url)
             .then(res => res.json());
             tryFetches.push(fetchReq);
